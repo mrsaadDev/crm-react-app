@@ -1,6 +1,6 @@
 import styled,{ keyframes } from "styled-components";
 
-export const ModalBuyurtmalar = (props)=>{
+export const MahsulotlarModal = (props)=>{
     if(!props.show){return null}
     const FadeIn = keyframes`
     0%{opacity:0;}
@@ -20,7 +20,7 @@ export const ModalBuyurtmalar = (props)=>{
         animation-duration: .5s;
     `;
     const ModalContent = styled.div`
-        width: 500px;
+        width: 80vw;
         background-color: rgba(137, 171, 245, 0.37);
         border-radius: .5rem;
     `;
@@ -44,13 +44,24 @@ export const ModalBuyurtmalar = (props)=>{
         display: flex;
         justify-content: space-between;
     `;
+    const FlexColumn = styled.div`
+    display: flex;
+    flex-direction: column;
+`;
+const style = {margin: "10px 0"};
     return(
         <Modal onClick={props.onClose}>
             <ModalContent onClick={e=>e.stopPropagation()}>
             <ModalBody>
                 <Flex>
-            <props.Btn onClick={props.onClose}>O'zgartirish</props.Btn>
-            <BtnDanger onClick={props.onClose}>O'chirish</BtnDanger>
+                <h2>Sutli Mahsulotlar</h2>
+            </Flex>
+            <Flex>
+                <FlexColumn>
+                <h5 style={style}>Sut</h5>
+                <h5 style={style}>Qatiq</h5>
+                <BtnDanger>O'chirish</BtnDanger>
+                </FlexColumn>
             </Flex>
             </ModalBody>
             </ModalContent>
