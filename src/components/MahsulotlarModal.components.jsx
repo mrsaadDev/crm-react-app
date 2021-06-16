@@ -55,11 +55,35 @@ const style = {margin: "10px 0"};
             <ModalBody>
                 <Flex>
                 <h2>Sutli Mahsulotlar</h2>
+                <h2>Novvoyxona</h2>
+                <h2>Novvoyxona</h2>
+                <h2>Novvoyxona</h2>
+                <h2>Novvoyxona</h2>
             </Flex>
             <Flex>
                 <FlexColumn>
                 <h5 style={style}>Sut</h5>
                 <h5 style={style}>Qatiq</h5>
+                <BtnDanger>O'chirish</BtnDanger>
+                </FlexColumn>
+                <FlexColumn>
+                <h5 style={style}>Non</h5>
+                <h5 style={style}>Buxanka</h5>
+                <BtnDanger>O'chirish</BtnDanger>
+                </FlexColumn>
+                <FlexColumn>
+                <h5 style={style}>Non</h5>
+                <h5 style={style}>Buxanka</h5>
+                <BtnDanger>O'chirish</BtnDanger>
+                </FlexColumn>
+                <FlexColumn>
+                <h5 style={style}>Non</h5>
+                <h5 style={style}>Buxanka</h5>
+                <BtnDanger>O'chirish</BtnDanger>
+                </FlexColumn>
+                <FlexColumn>
+                <h5 style={style}>Non</h5>
+                <h5 style={style}>Buxanka</h5>
                 <BtnDanger>O'chirish</BtnDanger>
                 </FlexColumn>
             </Flex>
