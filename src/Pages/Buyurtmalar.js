@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import MotionHoc from "./MotionHoc";
 import styled from "styled-components";
+import { ModalBuyurtmalar } from "../components/Modal_Buyurtmalar.component";
 
 const CalenderComponent = () => {
+  const [show, setShow] = useState(false);
   const FlexContentBorder = styled.div`
     display: flex;
     justify-content: space-between;
@@ -43,6 +45,19 @@ const CalenderComponent = () => {
       transition: ease .2s background-color;
     }
   `;
+  const Btn = styled.button`
+    border-radius: .5rem;
+    background-image: linear-gradient(to right, #7474BF 0%, #348AC7 51%, #7474BF 100%);
+    padding: 10px 15px;
+    color: #fff;
+    border: none;
+    &:hover{
+      cursor: pointer;
+      background-position: right center;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+      transition: ease .2s box-shadow;
+    }
+  `;
   return (
   <div>
     <FlexBetweenContent>
@@ -71,8 +86,9 @@ const CalenderComponent = () => {
             <h5>ancha</h5>
             <h5>Qo'shnimiz</h5>
             <h5>Bilmadim</h5>
-            <h5>3 ta nuqta</h5>
+            <Btn onClick={()=>setShow(!show)}>3 ta nuqta</Btn>
         </FlexContentBorder>
+        <ModalBuyurtmalar show={show} onClose={()=>setShow(false)} Btn={Btn}/>
         </P2>
       </FlexColumn>
     </Card>
