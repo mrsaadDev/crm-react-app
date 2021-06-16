@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import MotionHoc from "./MotionHoc";
+import MotionHoc from "../MotionHoc";
 import styled from "styled-components"
-import { MahsulotlarModal } from "../components/MahsulotlarModal.components";
+import { MahsulotlarModal } from "../../components/MahsulotlarModalComponent/MahsulotlarModal.components";
 
 const DocumentsComponent = () => {
   const [show, setShow] = useState(false);

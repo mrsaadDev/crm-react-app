@@ -1,5 +1,5 @@
 import React from "react";
-import MotionHoc from "./MotionHoc";
+import MotionHoc from "../MotionHoc";
 
 const TeamComponent = () => {
     return <h1>Korxona</h1>;

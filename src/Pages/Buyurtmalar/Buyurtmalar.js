@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import MotionHoc from "./MotionHoc";
+import MotionHoc from "../MotionHoc";
 import styled from "styled-components";
-import { ModalBuyurtmalar } from "../components/Modal_Buyurtmalar.component";
+import { ModalBuyurtmalar } from "../../components/Modal_BuyurtmalarComponent/Modal_Buyurtmalar.component";
 
 const CalenderComponent = () => {
   const [show, setShow] = useState(false);
